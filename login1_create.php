@@ -3,6 +3,7 @@ if(isset($_POST['submit'])){
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 	
+	
 	$koneksi = mysqli_connect("localhost", "root", "", "belajar_loginapp");
 	
 	if(koneksi){
