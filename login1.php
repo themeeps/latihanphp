@@ -24,7 +24,7 @@ if(isset($_POST['submit'])){
 
 <div class="container">
 	<div class="col -md -6">
-		<form action="login1.php" method="post>
+		<form action="login1.php" method="post">
 		<div class="form-group">
 			<label for="username">Username</label>
 			<input type="text" name="username" class="form-control" />
