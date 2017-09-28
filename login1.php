@@ -3,8 +3,13 @@ if(isset($_POST['submit'])){
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 	
-	echo $username;
-	echo $password;
+	$koneksi = $_POST['username'];
+	
+	if(koneksi){
+		echo "We're connected";
+	}else{
+		echo "Connection failed";
+	}
 }
 ?>
 
