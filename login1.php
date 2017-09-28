@@ -1,3 +1,13 @@
+<?php
+if(isset($_POST['submit'])){
+	$username = $_POST['username'];
+	$password = $_POST['password'];
+	
+	echo $username;
+	echo $password;
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,14 +23,13 @@
 		<div class="form-group">
 			<label for="username">Username</label>
 			<input type="text" name="username" class="form-control" />
-		</div>
 		<div class="form-group">
 			<label for="password">Password</label>
 			<input type="password" name="password" class="form-control" />
 		</div>
-		<input type="submit" name="submit" value="submit" class="btn btn-primary" />
+		<input type="submit" name="submit" value="Submit" class="btn btn-primary" />
 		</form>
-		</div>
 	</div>
+</div>
 </body>
-</html
+</html>
