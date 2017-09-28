@@ -5,7 +5,7 @@ if(isset($_POST['submit'])){
 	
 	$koneksi = mysqli_connect("localhost", "root", "", "belajar_loginapp");
 	
-	if(koneksi){
+	if($koneksi){
 		echo "We're connected";
 	}else{
 		echo "Connection failed";
