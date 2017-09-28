@@ -3,7 +3,7 @@ include "db.php";
 
 function showAllUserId(){
 	global $koneksi;
-	$query = "SELECT * FROM usersy";
+	$query = "SELECT * FROM users";
 	$result = mysqli_query($koneksi, $query);
 	
 	if(!$result){
