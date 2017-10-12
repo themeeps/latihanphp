@@ -36,12 +36,14 @@ $hasil = mysqli_query($db, $query);
 			$h2 = mysqli_query($db, $q2);
 			while($row = mysqli_fetch_assoc($h2)){
 			?>
-			<option value=""></option>
-			<?php 
+			<option value="<?php echo $row[0];?>"><?php echo $row[1]; ?>
+			</option>
+			<?php
 			}
 			?>
 		</select>
 		<input type="submit" name="filter" value="Filter" />
+		<input type="submit" name="reset" value="Reset" />
 	</form>
 </div>
 <div id="search">
